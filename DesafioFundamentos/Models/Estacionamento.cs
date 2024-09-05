@@ -50,7 +50,7 @@ namespace DesafioFundamentos.Models
                 if (!(int.TryParse(Console.ReadLine(), out int horas))) {
                  
                     Console.WriteLine("Horas inválidas!");
-                    
+
                 } else {
                 
                     valorTotal = precoInicial + precoPorHora * horas;
@@ -74,8 +74,9 @@ namespace DesafioFundamentos.Models
             if (veiculos.Any())
             {
                 Console.WriteLine("Os veículos estacionados são:");
-                // TODO: Realizar um laço de repetição, exibindo os veículos estacionados
-                // *IMPLEMENTE AQUI*
+                foreach(string e in veiculos) {
+                    Console.WriteLine(e);
+                }                
             }
             else
             {
